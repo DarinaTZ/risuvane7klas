@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Учебен Натюрморт Part3</title>
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 170px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+.p {
+  color: #a4a4a4;
+  display: block;
+}
+.video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.button{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+</style>
+<script src="https://kit.fontawesome.com/75710cc17b.js" crossorigin="anonymous"></script>
+<link href="/fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+<body oncontextmenu="return false;">
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;" id="rightMenu">
+  <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+  <a href="part1.html" class="w3-bar-item w3-button">Част 1</a>
+  <a href="part2.html" class="w3-bar-item w3-button">Част 2</a>
+  <a href="part3.html" class="w3-bar-item w3-button">Част 3</a>
+</div>
+<div class="w3-black">
+  <button class="w3-button w3-black w3-xlarge w3-right" onclick="openRightMenu()">&#9776;</button>
+  <div class="w3-container">
+  </div>
+</div>
+<script>
+function openLeftMenu() {
+  document.getElementById("leftMenu").style.display = "block";
+}
+
+function closeLeftMenu() {
+  document.getElementById("leftMenu").style.display = "none";
+}
+
+function openRightMenu() {
+  document.getElementById("rightMenu").style.display = "block";
+}
+
+function closeRightMenu() {
+  document.getElementById("rightMenu").style.display = "none";
+}
+</script>
+<body oncontextmenu="return false;">
+<div class="sidenav">
+<a class"button" href="index.html" target="_blank"><i class="fa fa-home"></i> Начало</a>
+  <h2 class="p">Съдържание:</h2>
+  <a href="part1.html">»Натюрморт за 7 клас</a>
+</div>
+
+<div class="main">
+  <h2 class="video">Част 3:</h2>
+<video class="video" width="1000" controls>
+  <source src="part3.mp4" type="video/mp4">
+  Your browser does not support HTML video.
+</video>
+  </div>
+
+</body>
+</html>
